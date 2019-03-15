@@ -5,7 +5,7 @@ import com.geralt.mafia.domain.Player;
 /**
  * 狼人
  */
-public class Werewolf extends Player {
+public class Werewolf extends Role {
 
 
     public void voteForSheriff() {

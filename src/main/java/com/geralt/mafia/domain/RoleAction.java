@@ -6,8 +6,4 @@ package com.geralt.mafia.domain;
 public interface RoleAction {
 
 
-
-
-
-
 }

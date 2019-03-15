@@ -7,6 +7,18 @@
     <groupId>com.xueliman.iov</groupId>
     <artifactId>Geralt</artifactId>
     <version>1.0.0-SNAPSHOT</version>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>6</source>
+                    <target>6</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
     <dependencies>
 
@@ -22,12 +34,24 @@
             <version>2.0.0.RELEASE</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-websocket</artifactId>
+            <version>2.0.0.RELEASE</version>
+        </dependency>
         <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.18.4</version>
             <scope>provided</scope>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>27.0.1-jre</version>
         </dependency>
 
     </dependencies>
