@@ -5,10 +5,8 @@ import com.geralt.mafia.domain.part.Role;
 import com.geralt.mafia.domain.part.Seer;
 import com.geralt.mafia.domain.part.Villager;
 import com.geralt.mafia.domain.part.Werewolf;
-import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
-import org.checkerframework.checker.units.qual.C;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -111,4 +109,44 @@ public class GameRule {
         return getWolfNum() + getGodNum() + getVilleagerNum();
     }
 
+
+    public int getGodNum() {
+        return godNum;
+    }
+
+    public void setGodNum(int godNum) {
+        this.godNum = godNum;
+    }
+
+    public int getWolfNum() {
+        return wolfNum;
+    }
+
+    public void setWolfNum(int wolfNum) {
+        this.wolfNum = wolfNum;
+    }
+
+    public int getVilleagerNum() {
+        return villeagerNum;
+    }
+
+    public void setVilleagerNum(int villeagerNum) {
+        this.villeagerNum = villeagerNum;
+    }
+
+    public List<Role> getRoleList() {
+        return roleList;
+    }
+
+    public void setRoleList(List<Role> roleList) {
+        this.roleList = roleList;
+    }
+
+    public boolean isIdoitMastDie() {
+        return idoitMastDie;
+    }
+
+    public void setIdoitMastDie(boolean idoitMastDie) {
+        this.idoitMastDie = idoitMastDie;
+    }
 }

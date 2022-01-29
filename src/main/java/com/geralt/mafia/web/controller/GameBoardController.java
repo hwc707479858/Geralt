@@ -1,9 +1,5 @@
 package com.geralt.mafia.web.controller;
 
-import com.geralt.mafia.config.IdWorker;
-import com.geralt.mafia.game.GameBoard;
-import com.geralt.mafia.game.GameRule;
-import com.geralt.mafia.game.GameStatus;
 import com.geralt.mafia.web.service.IGameBoardCacheService;
 import com.geralt.web.vo.ResponseData;
 import lombok.extern.slf4j.Slf4j;
@@ -26,13 +22,13 @@ public class GameBoardController {
     @RequestMapping("/create")
     public ResponseData createGame(int totalNum, String password, String gameName, String uuId) {
         try {
-            GameBoard gameBoard = GameBoard.builder()
+           /* GameBoard gameBoard = GameBoard.builder()
                     .gameStatus(GameStatus.WAIT_FOR_START)
                     .gameRule(GameRule.defaultGameRule(totalNum))
                     .password(password)
                     .gameName(gameName)
                     .masterUuId(uuId).build();
-            gameBoardCacheService.put(IdWorker.INSTANCE.nextId(), gameBoard);
+            gameBoardCacheService.put(IdWorker.INSTANCE.nextId(), gameBoard);*/
         } catch (Exception e) {
             e.printStackTrace();
         }

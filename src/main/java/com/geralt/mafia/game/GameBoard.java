@@ -1,7 +1,6 @@
 package com.geralt.mafia.game;
 
 import com.geralt.mafia.domain.Player;
-import com.geralt.mafia.domain.part.Role;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
@@ -63,6 +62,77 @@ public class GameBoard {
      */
     private String gameName;
 
+    public int getTurnNum() {
+        return turnNum;
+    }
+
+    public void setTurnNum(int turnNum) {
+        this.turnNum = turnNum;
+    }
+
+    public int getSheriffPlayerNo() {
+        return sheriffPlayerNo;
+    }
+
+    public void setSheriffPlayerNo(int sheriffPlayerNo) {
+        this.sheriffPlayerNo = sheriffPlayerNo;
+    }
+
+    public int getGameStatus() {
+        return gameStatus;
+    }
+
+    public void setGameStatus(int gameStatus) {
+        this.gameStatus = gameStatus;
+    }
+
+    public List<Player> getPlayerList() {
+        return playerList;
+    }
+
+    public void setPlayerList(List<Player> playerList) {
+        this.playerList = playerList;
+    }
+
+    public Map<Integer, Player> getPlayerMap() {
+        return playerMap;
+    }
+
+    public void setPlayerMap(Map<Integer, Player> playerMap) {
+        this.playerMap = playerMap;
+    }
+
+    public GameRule getGameRule() {
+        return gameRule;
+    }
+
+    public void setGameRule(GameRule gameRule) {
+        this.gameRule = gameRule;
+    }
+
+    public String getMasterUuId() {
+        return masterUuId;
+    }
+
+    public void setMasterUuId(String masterUuId) {
+        this.masterUuId = masterUuId;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getGameName() {
+        return gameName;
+    }
+
+    public void setGameName(String gameName) {
+        this.gameName = gameName;
+    }
 }
 
 
